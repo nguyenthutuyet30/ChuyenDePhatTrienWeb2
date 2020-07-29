@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-Light";
+    src: url(../font/Poppins-Light.ttf);
+}
+
+$text-size: 20px;
+
+$text-color: rgba(255, 255, 255, 1);
+
+.type-22{
+    font-family: "Poppins-Regular";
+    h2{
+        font-size: $text-size + 8px;
+        font-weight: 300;
+        font-family: "Poppins-Light";
+    }
+   h3{
+       @extend h2;
+       font-size: $text-size - 1px;
+   }
+    p{
+        font-size: $text-size - 6px;
+    }
+    .link-light{
+        a{
+            color: #42ccaf;
+            text-decoration: none;
+        }
+    }
+    .date{
+        font-size: $text-size - 8px;
+        color: $text-color - 106;
+    }
+    .arrow-menu{
+        position: relative;
+        .icon-arrow{
+            position: absolute;
+            left: -30px; // cách này vẫn chưa hay (Tìm hiểu sau)
+            top: 10px;
+        }
+    }
+    .dropdown{
+        .custom-button{
+            border: none;
+        }
+    }
+}
