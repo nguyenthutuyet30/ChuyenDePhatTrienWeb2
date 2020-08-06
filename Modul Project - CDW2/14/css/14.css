@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Poppins-Regular";
+  src: url(../font/Poppins-Regular.ttf); }
+@font-face {
+  font-family: "Poppins-Light";
+  src: url(../font/Poppins-Light.ttf); }
+
+.type-14 {
+  font-family: "Poppins-Light"; }
+  .type-14 .box-menu {
+    border: 1px solid #e1e1e1;
+    padding: 20px; }
+    .type-14 .box-menu h3 {
+      font-size: 18px;
+      font-weight: 600; }
+    .type-14 .box-menu .slidemenu {
+      margin: 0;
+      padding: 0;
+      font-size: 14px; }
+      .type-14 .box-menu .slidemenu .parent {
+        position: relative; }
+        .type-14 .box-menu .slidemenu .parent:hover .slidemenu_child {
+          display: block; }
+      .type-14 .box-menu .slidemenu .parent li a:hover {
+        color: #4ecdc4; }
+      .type-14 .box-menu .slidemenu li {
+        padding: 13px;
+        list-style-type: none;
+        border-top: 1px solid #e1e1e1; }
+        .type-14 .box-menu .slidemenu li .slidemenu_child {
+          position: absolute;
+          top: 0;
+          left: auto;
+          right: 100%;
+          background-color: white;
+          border: 1px solid #e1e1e1;
+          padding: 0;
+          min-width: 180px;
+          display: none; }
+          .type-14 .box-menu .slidemenu li .slidemenu_child .parent:hover .slidemenu_grandchild {
+            display: block; }
+          .type-14 .box-menu .slidemenu li .slidemenu_child li {
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            text-align: right;
+            padding: 10px; }
+            .type-14 .box-menu .slidemenu li .slidemenu_child li .slidemenu_grandchild {
+              position: absolute;
+              top: 0;
+              left: auto;
+              right: 100%;
+              background-color: white;
+              border: 1px solid #e1e1e1;
+              padding: 0;
+              min-width: 200px;
+              display: none; }
+          .type-14 .box-menu .slidemenu li .slidemenu_child li:first-child {
+            border-top: none; }
+        .type-14 .box-menu .slidemenu li a {
+          text-decoration: none;
+          color: #404040; }
+          .type-14 .box-menu .slidemenu li a i {
+            padding-right: 20px; }
+          .type-14 .box-menu .slidemenu li a:hover {
+            color: #4ecdc4; }
