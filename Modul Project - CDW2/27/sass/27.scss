@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-Light";
+    src: url(../font/Poppins-Light.ttf);
+}
+
+$text-size: 20px;
+
+$color-white: rgba(255, 255, 255, 1);
+
+$color-green: rgba(78, 205, 196, 1);
+
+$space-words: 20px;
+
+.type-27{
+    font-family: "Poppins-Regular";
+    .property_content{
+        h3{
+            font-family: "Poppins-Light";
+            font-size: $text-size + 2px;
+            a{
+                text-decoration: none;
+                color: $color-white - 201;
+                i{
+                    transform: rotate(45deg);
+                    font-size: $text-size - 6px;
+                    color: #f88c37;
+                }
+            }
+        }
+        p{
+            color: $color-white - 118;
+            font-size: $text-size - 6px;
+        }
+    }
+    .property-img{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+}

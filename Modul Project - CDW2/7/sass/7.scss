@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-Light";
+    src: url(../font/Poppins-Light.ttf);
+}
+
+$text-size: 14px;
+
+$color-white: rgba(255, 255, 255, 1);
+
+$color-green: rgba(78, 205, 196, 1);
+
+$space-words: 20px;
+
+.type-7{
+    font-family: "Poppins-Regular";
+    .box-title{
+        &::before{
+            width: 45%;
+            height: 1px;
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid $color-white - 26;//#e5e5e5
+            left: calc(100% - 38%);
+        }
+       &::after{
+            width: 45%;
+            height: 1px;
+            content: '';
+            position: absolute;
+            border-bottom: 1px solid $color-white - 26;//#e5e5e5
+            right: calc(100% - 38%);
+       }
+    }
+    .agent{
+        color: $color-white -  201;
+        .agent_img{
+            img{
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        .agent_name{
+            font-size: $text-size + 4px;
+        }
+        .agent_info{
+            border-top: 1px solid $color-white - 26;
+            border-bottom: 1px solid $color-white - 26;
+            font-size: $text-size - 1px;
+            .phone{
+                padding: $space-words + 5 $space-words - 5px $space-words + 5 0px;
+                border-right: 1px solid $color-white - 26;
+                i{
+                    color: $color-white - 61;
+                }
+            }
+            .email{
+                padding: $space-words + 5  $space-words - 5;
+                i{
+                    color: $color-white - 61;
+                }
+            }
+        }
+    }
+    // Mobile
+    @media (max-width: 768px) {
+        .item_content{
+            h4{
+                font-size: $text-size + 2px!important;
+                .price{
+                    font-size: $text-size + 4px!important;
+                    float: none;
+                    display: block;
+                }
+            }
+        }
+        .box-title{
+            &::before{
+                width: 10%;
+                left: calc(100% - 10%);
+            }
+           &::after{
+                width: 10%;
+                right: calc(100% - 10%);
+           }
+        }
+        .agent_info{
+            display: block!important;
+            text-align: center;
+            .phone{
+                padding: $space-words - 15 0px!important;
+                border-right: none!important;
+                i{
+                    color: $color-white - 61;
+                }
+            }
+            .email{
+                padding: $space-words - 15 0px!important;
+                i{
+                    color: $color-white - 61;
+                }
+            }
+        }
+    }
+}

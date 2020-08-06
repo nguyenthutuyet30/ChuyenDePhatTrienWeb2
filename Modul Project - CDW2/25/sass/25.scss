@@ -1,0 +1,95 @@
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../font/Poppins-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Poppins-Light";
+    src: url(../font/Poppins-Light.ttf);
+}
+
+$text-size: 20px;
+
+$color-white: rgba(255, 255, 255, 1);
+
+$color-green: rgba(78, 205, 196, 1);
+
+$space-words: 20px;
+
+.type-25{
+    font-family: "Poppins-Regular";
+    .cover-bg{
+        background-image: url('../images/jsn-promo.jpg');
+        h2{
+            font-size: $text-size + 10px;
+            font-weight: 500;
+        }
+    }
+    .custom-breadcrumb{
+        background-color: transparent;
+        padding: 0;
+        .custom-item{
+            font-size: $text-size - 6px;
+            a{
+                text-decoration: none;
+                color: $color-white - 106;//#959595
+            }
+        }
+        .custom-item+{
+            &::before{
+                content: '>';
+            }
+        }
+    }
+    h2{
+        font-size: $text-size + 8px;
+        font-family: "Poppins-Light";
+    }
+    h3{
+        font-size: $text-size - 2px;
+    }
+    p{
+        font-size: $text-size - 6px;
+    }
+    .date{
+        font-size: $text-size - 8px;
+        color: $color-white - 106;
+    }
+    .row{
+        .box-style{
+            border: 1px solid $color-white - 26;
+            padding: $space-words;
+        }
+        .box-nd-style{
+            border: 1px solid $color-green;
+            @extend .box-style;
+            .text-thin{
+                font-family: "Poppins-Light";
+            }
+        }
+        .box-rd-style{
+            @extend .box-nd-style;
+            border: none;
+            background-color: $color-white - 6;
+        }
+        .box-right-style{
+            @extend .box-rd-style;
+            background-color: $color-green;
+            color: $color-white;
+        }
+        .box-right-nd-style{
+            @extend .box-style;
+            border-top: 2px solid $color-green;
+            .text-thin{
+                font-family: "Poppins-Light";
+            }
+        }
+        .box-right-rd-style{
+            @extend .box-style;
+            border: 2px solid $color-white - 255;
+            .text-thin{
+                font-family: "Poppins-Light";
+            }
+        }
+    }
+}
